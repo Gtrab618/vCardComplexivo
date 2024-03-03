@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/animation.css">
+</head>
+
+<body>
+
+  <div class="card">
+    <div class="wrapper">
+      <img src="/img/Bac1.jpeg" class="cover-image" />
+
+      <div class="form-img">
+        <div class="img-container">
+          <div>
+            <img th:src="${IEmpleado.imgUrl}" />
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <img src="/img/logo1.png" alt="logo" class="title logoTrans">
+
+    <!--<img src="https://ggayane.github.io/css-experiments/cards/dark_rider-title.png" class="title" /> th:text="${IEmpleado.nomEmpleado}"-->
+    <img src="/img/Animated1.webp" class="character" />
+    <div class="text ">
+
+      <p th:text="${IEmpleado.nomEmpleado}" class=""></p>
+      <br>
+      <p class="infoTitle" style="color: yellow;">Ciudad</p>
+      <br>
+      <p th:text="${IEmpleado.ciudad[0].codCiudad}"></p>
+      <p th:text="${IEmpleado.ciudad[0].nomCiudad}"></p>
+      <br>
+      <p class="infoTitle" style="color: yellow;">Sucursal</p>
+      <br>
+      <p th:text="${IEmpleado.sucursal[0].codSucursal}"></p>
+      <p th:text="${IEmpleado.sucursal[0].nomSucursal}"></p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="wrapper">
+      <img src="/img/Bac2.jpg" class="cover-image" />
+
+      <div class="form-img">
+        <div class="img-container">
+          <div>
+            <img th:src="${IEmpleado.imgUrl2}" />
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <img src="/img/logo2.png" alt="logo" class="title logoTrans">
+
+    <!--<img src="https://ggayane.github.io/css-experiments/cards/dark_rider-title.png" class="title" /> th:text="${IEmpleado.nomEmpleado}"-->
+    <img src="/img/Animated2.webp" class="character" />
+    <div class="text ">
+
+      <p th:text="${IEmpleado.nomEmpleado2}" class=""></p>
+      <br>
+      <p class="infoTitle" style="color: aqua;">Ciudad</p>
+      <br>
+      <p th:text="${IEmpleado.ciudad[1].codCiudad}"></p>
+      <p th:text="${IEmpleado.ciudad[1].nomCiudad}"></p>
+      <br>
+      <p class="infoTitle" style="color: aqua;">Sucursal</p>
+      <br>
+      <p th:text="${IEmpleado.sucursal[1].codSucursal}"></p>
+      <p th:text="${IEmpleado.sucursal[1].nomSucursal}"></p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="wrapper">
+      <img src="/img/Bac3.jpg" class="cover-image" />
+
+    </div>
+   
+    <!--<img src="https://ggayane.github.io/css-experiments/cards/dark_rider-title.png" class="title" /> th:text="${IEmpleado.nomEmpleado}"-->
+    <div class="text ">
+
+      <p th:text="${IEmpleado.nomEmpleado3}" class=""></p>
+      <br>
+      <p class="infoTitle">Ciudad</p>
+      <br>
+      <p th:text="${IEmpleado.ciudad[2].codCiudad}"></p>
+      <p th:text="${IEmpleado.ciudad[2].nomCiudad}"></p>
+      <br>
+      <p class="infoTitle">Sucursal</p>
+      <br>
+      <p th:text="${IEmpleado.sucursal[2].codSucursal}"></p>
+      <p th:text="${IEmpleado.sucursal[2].nomSucursal}"></p>
+    </div>
+  </div>
+
+</body>
+
+</html>
